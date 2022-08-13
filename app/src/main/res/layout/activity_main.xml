@@ -19,12 +19,46 @@
         android:textColor="#101010"
         android:textSize="@dimen/text_size" />
 
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        android:autofillHints="name"/>
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/text_size"
+        android:fontFamily="@font/roboto"
+        android:text="@string/done" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        style="NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        android:textAlignment="center"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <ImageView
         android:id="@+id/start_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/todo"
+        />
 
     <ScrollView
         android:id="@+id/bio_text"
